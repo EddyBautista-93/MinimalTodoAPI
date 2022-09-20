@@ -1,4 +1,3 @@
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +10,7 @@ var app = builder.Build();
 // HTTP EndPoint points
 
 // default index method
-app.MapGet("/", () => "Hello World");
+app.MapGet("/", () => "TodoAPI");
 
 // Grab all of the todo item
 // app.MapGet("/todoitems", async (Todo db))
